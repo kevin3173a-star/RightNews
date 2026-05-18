@@ -74,7 +74,7 @@ export default {
     },
     newsList(){
       this.loading = true  // 시작
-      fetch(`http://localhost:4000/news?keyword=${this.keyword}`)
+      fetch(`https://react-todolist0326.vercel.app/news?keyword=${this.keyword}`)
       .then(res=>res.json())
       .then(res=>{
         this.data=res
@@ -101,7 +101,7 @@ export default {
     // 기사 상세보기
     async openDetail(item){
       console.log('item.link:', item.link)
-      const res=await fetch(`http://localhost:4000/news/detail?url=${encodeURIComponent(item.link)}`)
+      const res=await fetch(`https://react-todolist0326.vercel.app/news/detail?url=${encodeURIComponent(item.link)}`)
       const detail = await res.json()
       console.log('detail:', detail)
       this.selectedItem = {...item,...detail}
