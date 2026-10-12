@@ -26,7 +26,7 @@
 ------------------
 
 ## 🔗 배포 URL
-**지금뉴스** [https://edu-search-beige.vercel.app/](https://right-news.vercel.app/)
+**지금뉴스** https://right-news.vercel.app/
 
 ---------------
 
