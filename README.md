@@ -39,14 +39,20 @@
 ## 🗂️ 폴더 구조
 
 ```
-📂src/
-┣━━ 📂app/
-┃   ┣━━ 📂(pages)/                   
-┃   ┃   ┣━━ 📂detail/                  # 교육 강좌 상세 페이지
-┃   ┣━━ 📄layout.js                    # 전체 레이아웃 
-┃   ┣━━ 📄page.js                      # 메인 페이지(교육 강좌 리스트 페이지) 
-┃   ┣━━ 📄basic.module.css             # 메인 페이지 module.css
-┃   ┗━━ 📄detail.module.css            # 교육 강좌 상세 페이지 module.css           
+📂 src/
+┣━━ 📂 assets/
+┃   ┗━━ 🖼️ logo.png                  # 이미지 리소스
+┣━━ 📂 components/
+┃   ┗━━ 📄 HelloWorld.vue            # 공통 컴포넌트
+┣━━ 📂 router/
+┃   ┗━━ 📄 index.js                  # 페이지 라우팅 설정
+┣━━ 📂 store/
+┃   ┗━━ 📄 index.js                  # 전역 상태 관리 (Vuex)
+┣━━ 📂 views/
+┃   ┣━━ 📄 HomeView.vue              # 메인 페이지
+┃   ┗━━ 📄 AboutView.vue             # 소개 페이지
+┣━━ 📄 App.vue                       # 전체 레이아웃
+┗━━ 📄 main.js                       # Vue 앱 진입점    
 ```
 
 -------
